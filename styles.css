@@ -7,88 +7,58 @@ body{
     height: 100vh;
     width: 100%;
     background-color: #121212;
+    font-family: Maven Pro, sans-serif;
 }
-
 .wrapper{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 0.5rem;
     height: 100vh;
-    width: 100%;
-    gap: 8px;
 }
-.wrapper div div{
-    border-radius: 15px;
-}
-.row1{
-    display: flex;
-    align-items: center;
+.box1, .box2, .box3, .box4, .box5{
+    background-color: aliceblue;
+    border-radius: 1rem;
 }
 .box1{
     height: 30rem;
-    width: 18rem;
-    background-size: cover;
-    overflow: hidden; /* Add overflow hidden to clip the zoom effect within the box */
-    border-radius: 15px; /* Move border-radius here to ensure the zoom effect respects it */
-    position: relative; /* Add position relative to contain the absolutely positioned image */
+    width: 20rem;
 }
-
-.img{
-    height: 100%;
-    width: 100%;
-    transition: transform 0.5s; /* Change to transform for better performance */
-    object-fit: cover;
-    border-radius: 15px; /* Ensure the image also has the same border radius */
-    position: absolute; /* Position absolutely to make sure it covers the entire box */
-    top: 0;
-    left: 0;
-}
-
-.box1:hover .img {
-    transform: scale(1.1); /* Apply the zoom effect */
-}
-
-.row2{
+.col2{
     display: flex;
     flex-direction: column;
-    gap: 8px;
 }
-.box4{
-    height: 14.75rem;
-    width: 36rem;
-    background-color: #f1f1f1;
+.box2{
+    width: 30rem;
+    height: 19.75rem;
+    margin-bottom: 0.5rem;
 }
-
-.rowtwo{
+.c2r1{
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
 }
-.box5,.box6{
-    height: 14.75rem;
-    width: 17.75rem;
-    background-color: #f1f1f1;
+.box3{
+    width: 14.75rem;
+    height: 9.75rem;
 }
-
-.row3{
+.col3{
     display: flex;
     flex-direction: column;
-    height: 480px;
+    gap: 0.5rem;
 }
-.box7{
-    height: 19.75rem;
-    width: 17.75rem;
-    margin-bottom: 0.5rem;
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
-}
-.box7:hover .img {
-    transform: scale(1.1); /* Apply the zoom effect */
-}
-.box8{
+.box4{
+    width: 14.75rem;
     height: 9.75rem;
-    width: 17.75rem;
-    background-color: #f1f1f1;
+}
+.box5{
+    width: 14.75rem;
+    height: 19.75rem;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
 }
