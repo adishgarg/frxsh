@@ -51,7 +51,7 @@ body{
 
 .box2 a {
     text-decoration: none;
-    background: linear-gradient(to left, aliceblue 50%, black 50%);
+    transition: background-position 1s ease-in-out, color 1s ease-in-out;
     color: black;
 }
 
