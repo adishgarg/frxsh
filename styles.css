@@ -119,6 +119,14 @@ body{
     transform: scale(1.1);
 }
 
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 100vw;
+        height: 80vh;
+        overflow: hidden; /* Adish will continue from here :) */
+    }
+}
+
 /* HOME.HTML */
 
 nav {
