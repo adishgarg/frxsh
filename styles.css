@@ -122,7 +122,6 @@ body{
 /* HOME.HTML */
 
 nav {
-    border: 1px solid red;
     font-family: Oswald, sans-serif;
     font-size: 16px;
     display: flex;
@@ -132,6 +131,10 @@ nav {
     justify-content: space-around;
     color: white;
     width: 100vw;
+}
+
+.navInfoMobile {
+    display: none;
 }
 
 nav a {
@@ -158,9 +161,25 @@ nav a:hover::before {
 
 .userInfo {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     width: 10%;
 }
 
+@media screen and (max-width: 768px) {
 
+    nav {
+        padding: 0.8rem 2rem;
+        justify-content: space-between;
+    }
 
+    .navInfo {
+        display: none;
+    }
+
+    .navInfoMobile {
+        display:block;
+        font-size: 24px;
+    }
+}
