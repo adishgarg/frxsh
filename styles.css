@@ -1,3 +1,5 @@
+/* INDEX.HTML CSS */
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +7,7 @@
 }
 body{
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-color: #121212;
     font-family: Oswald, sans-serif;
 }
@@ -14,37 +16,42 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.5vw;
     height: 100vh;
 }
 .box1, .box2, .box3, .box4, .box5, .box31{
     background-color: aliceblue;
-    border-radius: 1rem;
+    border-radius: 1vw;
     position: relative;
     overflow: hidden;
 }
 .box1{
-    height: 30rem;
-    width: 20rem;
+    height: 30vh;
+    width: 20vw;
 }
 
     
 .col2{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.5vw;
 }
 .box2 {
     display: flex;
     justify-content: center; 
     align-items: center; 
-    height: 9.875rem;
-    font-size: 8rem;
+    height: 9.875vh;
+    font-size: 8vw;
     background: linear-gradient(to left, aliceblue 50%, black 50%);
     background-size: 200% 100%;
     background-position: right;
     color: black;
     transition: background-position 1s ease-in-out, color 1s ease-in-out;
+}
+
+.box2 a {
+    text-decoration: none;
+    color: #121212;
 }
 
 
@@ -53,39 +60,39 @@ body{
     color: white;
 }
 .box6{
-    width: 14.75rem;
-    height: 18.25rem;
+    width: 14.75vw;
+    height: 18.25vh;
 }
 .c2r1{
     display: flex;
     flex-direction: row;
-    gap: 0.5rem;
+    gap: 0.5vw;
 }
 .c2r1c1{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.5vw;
 }
 .box3{
-    width: 14.75rem;
-    height: 9.65rem;
+    width: 14.75vw;
+    height: 9.65vh;
 }
 .box31{
-    height: 19.75rem;
-    width: 14.75rem;
+    height: 19.75vh;
+    width: 14.75vw;
 }
 .col3{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.5vw;
 }
 .box4{
-    width: 14.75rem;
-    height: 9.75rem;
+    width: 14.75vw;
+    height: 9.75vh;
     display: flex;
     justify-content: center; 
     align-items: center; 
-    font-size: 4rem;
+    font-size: 4vw;
     background: linear-gradient(to right, aliceblue 50%, black 50%);
     background-size: 200% 100%;
     background-position: left;
@@ -97,17 +104,63 @@ body{
     color: white;
 }
 .box5{
-    width: 14.75rem;
-    height: 19.75rem;
+    width: 14.75vw;
+    height: 19.75vh;
 }
 
 .img{
     width: 100%;
     height: 100%;
-    border-radius: 1rem;
+    border-radius: 1vw;
     transition: transform 0.5s ease-in-out;
 }
 
 .img:hover{
     transform: scale(1.1);
 }
+
+/* HOME.HTML */
+
+nav {
+    border: 1px solid red;
+    font-family: Oswald, sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.8rem 5rem;
+    justify-content: space-around;
+    color: white;
+    width: 100vw;
+}
+
+nav a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transform-origin: left;
+    transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.userInfo {
+    display: flex;
+    justify-content: space-around;
+    width: 10%;
+}
+
+
+
