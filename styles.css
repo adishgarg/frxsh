@@ -1,3 +1,5 @@
+/* INDEX.HTML CSS */
+
 *{
     margin: 0;
     padding: 0;
@@ -47,6 +49,22 @@ body{
     transition: background-position 1s ease-in-out, color 1s ease-in-out;
 }
 
+.box2 a {
+    text-decoration: none;
+    transition: background-position 1s ease-in-out, color 1s ease-in-out;
+    color: black;
+}
+
+.box2 a:hover {
+    background-position: left;
+    color: white;
+}
+
+.box2 a:hover {
+    background-position: right;
+    color: white;
+}
+
 
 .box2:hover {
     background-position: left;
@@ -92,10 +110,12 @@ body{
     color: black;
     transition: background-position 1s ease-in-out, color 1s ease-in-out;
 }
+
 .box4:hover {
     background-position: right;
     color: white;
 }
+
 .box5{
     width: 14.75rem;
     height: 19.75rem;
@@ -110,4 +130,94 @@ body{
 
 .img:hover{
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 100vw;
+        height: 80vh;
+        overflow: hidden; /* Adish will continue from here :) */
+    }
+}
+
+/* HOME.HTML */
+
+nav {
+    font-family: Oswald, sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.8rem 5rem;
+    justify-content: space-around;
+    color: white;
+    width: 100vw;
+}
+
+.navInfoMobile {
+    display: none;
+}
+
+nav a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transform-origin: left;
+    transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 10%;
+}
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        padding: 0.8rem 2rem;
+        justify-content: space-between;
+    }
+
+    .navInfo {
+        display: none;
+    }
+
+    .navInfoMobile {
+        display:block;
+        font-size: 24px;
+    }
+
+    nav a::before {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: white;
+        transform-origin: left;
+        transition: width 0.3s ease-in-out;
+    }
+    
+    nav a:hover::before {
+        width: 100%;
+    }
+
 }
