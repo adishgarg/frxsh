@@ -167,7 +167,8 @@ body {
   align-items: center;
   gap: 1rem;
   margin-bottom: 5rem;
-  height: 97vh;
+  min-height: 97vh;
+  height: 100%;
 }
 
 .product-category-grid {
