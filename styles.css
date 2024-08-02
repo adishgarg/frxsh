@@ -1,166 +1,282 @@
 /* INDEX.HTML CSS */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-body{
-    height: 100vh;
-    width: 100%;
-    background-color: #121212;
-    font-family: Oswald, sans-serif;
-}
-
-.wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    height: 100vh;
-    width: 100%;
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #121212;
+  font-family: Oswald, sans-serif;
 }
 
-.box1, .box2, .box3, .box4, .box5, .box31{
-    width: 100%;
-    height: 100%;
-    background-color: aliceblue;
-    border-radius: 1rem;
-    position: relative;
-    overflow: hidden;
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  height: 100vh;
+  width: 100%;
 }
 
-.col1{
-    height: 66%;/* 30 rem*/
-    width: 20%;/*20 rem*/
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box31 {
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
 }
- 
-.col2{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    width: 30%;
-    height: 66%;
+
+.col1 {
+  height: 66%; /* 30 rem*/
+  width: 20%; /*20 rem*/
+}
+
+.col2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 30%;
+  height: 66%;
 }
 .box2 {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    font-size: 8vw;
-    background: linear-gradient(to left, aliceblue 50%, black 50%);
-    background-size: 200% 100%;
-    background-position: right;
-    color: black;
-    transition: background-position 1s ease-in-out, color 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8vw;
+  background: linear-gradient(to left, aliceblue 50%, black 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  color: black;
+  transition: background-position 1s ease-in-out, color 1s ease-in-out;
 }
 
 .col2 a {
-    text-decoration: none;
-    transition: background-position 1s ease-in-out, color 1s ease-in-out;
+  text-decoration: none;
+  transition: background-position 1s ease-in-out, color 1s ease-in-out;
 }
 
 .box2:hover {
-    background-position: left;
-    color: white;
+  background-position: left;
+  color: white;
 }
-.c2r1{
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-    width: 100%;
-    height: 64%;
+.c2r1 {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  width: 100%;
+  height: 64%;
 }
-.c2r1c1{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    width: 50%;
-    height: 100%;
+.c2r1c1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 50%;
+  height: 100%;
 }
 
-.box31{
-    height: 100%;
-    width: 50%;
+.box31 {
+  height: 100%;
+  width: 50%;
 }
-.col3{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    height: 66%;
-    width: 15.5%;
+.col3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 66%;
+  width: 15.5%;
 }
-.box4{
-    height: 32.5%;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    font-size: 4vw;
-    background: linear-gradient(to right, aliceblue 50%, black 50%);
-    background-size: 200% 100%;
-    background-position: left;
-    color: black;
-    transition: background-position 1s ease-in-out, color 1s ease-in-out;
+.box4 {
+  height: 32.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vw;
+  background: linear-gradient(to right, aliceblue 50%, black 50%);
+  background-size: 200% 100%;
+  background-position: left;
+  color: black;
+  transition: background-position 1s ease-in-out, color 1s ease-in-out;
 }
 
 .box4:hover {
-    background-position: right;
-    color: white;
+  background-position: right;
+  color: white;
 }
 
-.box5{
-    height: 67.5%;
+.box5 {
+  height: 67.5%;
 }
 
-.img{
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-    transition: transform 0.5s ease-in-out;
+.img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  transition: transform 0.5s ease-in-out;
 }
 
-.img:hover{
-    transform: scale(1.1);
+.img:hover {
+  transform: scale(1.1);
+}
+
+.content {
+  color: white;
+  border: 1px solid red;
+  height: 100vh;
+}
+
+.title {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.content p {
+  border: 1px solid green;
+  padding: 2rem 8rem;
+  font-size: 1.7rem;
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+.products {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 5rem;
+  height: 97vh;
+}
+
+.product-category-grid {
+  padding: 2rem 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.product-category-grid img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  object-fit: contain;
+}
+
+.product {
+  position: relative;
+}
+
+.product-hover {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.product:hover img {
+  opacity: 0.3;
+}
+
+.product:hover .product-hover {
+  opacity: 1;
+}
+
+.text {
+  background-color: #6f6f6f;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }
 
 @media screen and (max-width: 768px) {
-    .wrapper {
-        width: 100vw;
-        height: 80vh;
-        overflow: hidden;
-    }
-}
-
-.content{
-    color: white;
+  .wrapper {
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+  }
 }
 
 /* HOME.HTML */
 
 nav {
-    font-family: Oswald, sans-serif;
-    font-size: 16px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0.8rem 5rem;
-    justify-content: space-around;
-    color: white;
-    width: 100vw;
+  font-family: Oswald, sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.8rem 5rem;
+  justify-content: space-around;
+  color: white;
+  width: 100vw;
 }
 
 .navInfoMobile {
-    display: none;
+  display: none;
 }
 
 nav a {
-    position: relative;
-    color: white;
-    text-decoration: none;
+  position: relative;
+  color: white;
+  text-decoration: none;
 }
 
 nav a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transform-origin: left;
+  transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 0.8rem 2rem;
+    justify-content: space-between;
+  }
+
+  .navInfo {
+    display: none;
+  }
+
+  .navInfoMobile {
+    display: block;
+    font-size: 24px;
+  }
+
+  nav a::before {
     content: "";
     position: absolute;
     bottom: -2px;
@@ -170,50 +286,9 @@ nav a::before {
     background-color: white;
     transform-origin: left;
     transition: width 0.3s ease-in-out;
-}
+  }
 
-nav a:hover::before {
+  nav a:hover::before {
     width: 100%;
-}
-
-.userInfo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 10%;
-}
-
-@media screen and (max-width: 768px) {
-
-    nav {
-        padding: 0.8rem 2rem;
-        justify-content: space-between;
-    }
-
-    .navInfo {
-        display: none;
-    }
-
-    .navInfoMobile {
-        display:block;
-        font-size: 24px;
-    }
-
-    nav a::before {
-        content: "";
-        position: absolute;
-        bottom: -2px;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background-color: white;
-        transform-origin: left;
-        transition: width 0.3s ease-in-out;
-    }
-    
-    nav a:hover::before {
-        width: 100%;
-    }
-
+  }
 }
