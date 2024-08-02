@@ -135,8 +135,7 @@ body {
   justify-content: space-between;
   align-items: center;
   color: white;
-  border: 1px solid red;
-  height: 100vh;
+  height: 100%;
 }
 
 .socials {
@@ -153,53 +152,53 @@ body {
 }
 
 .content p {
-  border: 1px solid green;
   padding: 2rem 8rem;
   font-size: 1.7rem;
   text-align: center;
 }
 
 .products {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 5rem;
-  min-height: 97vh;
-  height: 100%;
-}
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 5rem;
+    height: auto; /* Let the height adjust based on content */
+    padding: 2rem; /* Add some padding for spacing */
+    box-sizing: border-box;
+  }
 
-.product-category-grid {
-  padding: 2rem 5rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
-}
+  .product-category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust columns based on available space */
+    gap: 2rem;
+    width: 100%; /* Ensure grid takes full width */
+  }
 
 .product-category-grid img {
-  width: 100%;
-  height: 100%;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-  object-fit: contain;
-}
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    object-fit: cover; /* Cover the entire area of the container */
+  }
 
-.product {
-  position: relative;
-}
+  .product {
+    position: relative;
+    overflow: hidden; /* Hide overflow to ensure hover effects stay within bounds */
+  }
 
-.product-hover {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
+  .product-hover {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
 .product:hover img {
   opacity: 0.3;
@@ -210,11 +209,13 @@ body {
 }
 
 .text {
-  background-color: #6f6f6f;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
+    background-color: #6f6f6f;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 0.5rem; /* Optional: Rounded corners */
+  }
+  
 
 @media screen and (max-width: 768px) {
   .wrapper {
@@ -224,8 +225,7 @@ body {
   }
 
   .product-category-grid {
-    padding: 2rem 4rem;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Single column layout */
   }
 
   .content {
@@ -249,6 +249,10 @@ body {
     font-size: 2rem;
     justify-content: space-around;
     margin-bottom: 3rem;
+  }
+
+  .products {
+    padding: 1rem 2rem; /* Adjust padding for smaller screens */
   }
   
 }
