@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     height: 100vh;
@@ -19,7 +20,7 @@ body{
     align-items: center;
     gap: 0.5rem;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .box1, .box2, .box3, .box4, .box5, .box31{
@@ -55,22 +56,10 @@ body{
     transition: background-position 1s ease-in-out, color 1s ease-in-out;
 }
 
-.box2 a {
+.col2 a {
     text-decoration: none;
     transition: background-position 1s ease-in-out, color 1s ease-in-out;
-    color: black;
 }
-
-.box2 a:hover {
-    background-position: left;
-    color: white;
-}
-
-.box2 a:hover {
-    background-position: right;
-    color: white;
-}
-
 
 .box2:hover {
     background-position: left;
@@ -139,8 +128,12 @@ body{
     .wrapper {
         width: 100vw;
         height: 80vh;
-        overflow: hidden; /* Adish will continue from here :) */
+        overflow: hidden;
     }
+}
+
+.content{
+    color: white;
 }
 
 /* HOME.HTML */
