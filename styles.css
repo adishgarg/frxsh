@@ -130,6 +130,7 @@ body {
 }
 
 .content {
+    border-top:  1px solid gray;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -158,6 +159,7 @@ body {
 }
 
 .products {
+    border-top:  1px solid gray;
     color: white;
     display: flex;
     flex-direction: column;
