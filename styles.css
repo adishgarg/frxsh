@@ -11,6 +11,7 @@ body {
   width: 100%;
   background-color: #121212;
   font-family: Oswald, sans-serif;
+  position: relative;
 }
 
 /* Wrapper for Flexbox Layout */
@@ -251,6 +252,7 @@ body {
 
   .content {
     height: 100%;
+    position: relative;
   }
 
   .title {
@@ -281,7 +283,11 @@ nav {
   padding: 0.8rem 5rem;
   justify-content: space-around;
   color: white;
-  width: 100vw;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #121212;
 }
 
 .navInfoMobile {
