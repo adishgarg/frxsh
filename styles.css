@@ -141,7 +141,6 @@ body {
   justify-content: space-between;
   align-items: center;
   color: white;
-  border-top: 1px solid gray;
   height: 100%;
 }
 
@@ -176,7 +175,6 @@ body {
   height: auto;
   padding: 2rem;
   box-sizing: border-box;
-  border-top: 1px solid gray;
 }
 
 .product-category-grid {
