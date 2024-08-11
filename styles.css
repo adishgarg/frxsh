@@ -369,3 +369,24 @@ footer p {
   justify-content: space-around;
   margin: 2rem 0rem;
 }
+
+.social-media {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-links {
+    width: 80%;
+  }
+
+  .footer-links a {
+    display: block;
+  } 
+
+  .social-media {
+    width: 70%;
+  }
+}
