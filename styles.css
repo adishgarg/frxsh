@@ -296,13 +296,13 @@ nav {
   display: none;
 }
 
-nav a {
+.navInfo {
   position: relative;
   color: white;
   text-decoration: none;
 }
 
-nav a::before {
+.navInfo::before {
   content: "";
   position: absolute;
   bottom: -2px;
@@ -314,7 +314,7 @@ nav a::before {
   transition: width 0.3s;
 }
 
-nav a:hover::before {
+.navInfo:hover::before {
   width: 100%;
 }
 
@@ -340,4 +340,32 @@ nav a:hover::before {
     display: block;
     font-size: 24px;
   }
+}
+
+/* Footer CSS here */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #121212;
+  border-top: 1px solid #6f6f6f;
+  color: white;
+  font-size: 1.4rem;
+  padding: 1rem;
+  height: 40vh;
+  max-height: 100%;
+  width: 100%;
+}
+
+footer p {
+  color: #6f6f6f;
+}
+
+.footer-links {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  margin: 2rem 0rem;
 }
