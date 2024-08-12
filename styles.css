@@ -277,30 +277,32 @@ body {
 /* Navigation Styles */
 nav {
   font-family: Oswald, sans-serif;
-  font-size: 16px;
+  font-size: 1.4rem;
   display: flex;
   align-items: center;
   padding: 0.8rem 5rem;
   justify-content: space-around;
   color: white;
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 2;
-  background-color: #121212;
+  backdrop-filter: blur(18px) saturate(0%);
+  -webkit-backdrop-filter: blur(18px) saturate(0%);
+  background-color: rgba(18, 18, 18, 0.75);
 }
 
 .navInfoMobile {
   display: none;
 }
 
-nav a {
+.navInfo {
   position: relative;
   color: white;
   text-decoration: none;
 }
 
-nav a::before {
+.navInfo::before {
   content: "";
   position: absolute;
   bottom: -2px;
@@ -312,7 +314,7 @@ nav a::before {
   transition: width 0.3s;
 }
 
-nav a:hover::before {
+.navInfo:hover::before {
   width: 100%;
 }
 
@@ -337,5 +339,54 @@ nav a:hover::before {
   .navInfoMobile {
     display: block;
     font-size: 24px;
+  }
+}
+
+/* Footer CSS here */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #121212;
+  border-top: 1px solid #6f6f6f;
+  color: white;
+  font-size: 1.4rem;
+  padding: 1rem;
+  height: 40vh;
+  max-height: 100%;
+  width: 100%;
+}
+
+footer p {
+  color: #6f6f6f;
+}
+
+.footer-links {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  margin: 2rem 0rem;
+}
+
+.social-media {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-links {
+    width: 80%;
+  }
+
+  .footer-links a {
+    display: block;
+  } 
+
+  .social-media {
+    width: 70%;
   }
 }
