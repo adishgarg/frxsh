@@ -25,24 +25,12 @@
       <div
         class="border-2 border-white p-8 rounded-md w-full max-w-4xl mx-8 gap-8 lg:grid lg:grid-cols-2"
       >
-        <div>
-          <h2 class="text-2xl font-bold mb-6 text-center text-white">
-            Create an Account
-          </h2>
-          <form>
-            <div class="mb-4">
-              <label for="name" class="block text-white font-semibold mb-2"
-                >Name</label
-              >
-              <input
-                type="text"
-                id="name"
-                name="name"
-                class="w-full p-3 border border-gray-500 bg-black text-white focus:ring-2 focus:ring-white"
-                placeholder="Your Name"
-                required
-              />
-            </div>
+      <div class="flex flex-col justify-around">
+        <h2 class="text-2xl font-bold mb-6 text-center text-white">
+          Sign In to Your Account
+        </h2>
+        <form class="flex flex-col justify-between h-fit grow">
+          <div>
             <div class="mb-4">
               <label for="email" class="block text-white font-semibold mb-2"
                 >Email</label
@@ -57,7 +45,9 @@
               />
             </div>
             <div class="mb-4">
-              <label for="password" class="block text-white font-semibold mb-2"
+              <label
+                for="password"
+                class="block text-white font-semibold mb-2"
                 >Password</label
               >
               <input
@@ -69,21 +59,9 @@
                 required
               />
             </div>
-            <div class="mb-4">
-              <label
-                for="password_confirmation"
-                class="block text-white font-semibold mb-2"
-                >Confirm Password</label
-              >
-              <input
-                type="password"
-                id="password_confirmation"
-                name="password_confirmation"
-                class="w-full p-3 border border-gray-500 bg-black text-white focus:ring-2 focus:ring-white"
-                placeholder="********"
-                required
-              />
-            </div>
+          </div>
+
+          <div>
             <div class="mb-6">
               <button
                 type="submit"
@@ -93,16 +71,17 @@
               </button>
             </div>
             <p class="text-center text-white">
-              Already have an account?
-              <a href="src/signIn.html" class="text-blue-500 hover:underline"
-                >Log in</a
+              Don't have an account?
+              <a href="./signUp.html" class="text-blue-500 hover:underline"
+                >Sign Up</a
               >
             </p>
-          </form>
-        </div>
+          </div>
+        </form>
+      </div>
         <div class="hidden justify-center items-center lg:flex">
           <img
-            src="./assets/blackman.jpg"
+            src="./assets/coolman.jpg"
             alt="Image"
             class="max-w-full h-auto rounded-md"
           />
