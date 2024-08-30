@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* body {
+    height: 100vh;
+    width: 100%;
+    background-color: #121212;
+    font-family: Oswald, sans-serif;
+    position: relative;
+} */
+.enlarged-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    /* Additional styles to increase the size */
+    max-height: 500px; /* Adjust the max-height as needed */
+}
