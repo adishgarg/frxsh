@@ -29,9 +29,9 @@
             frxsh
         </a>
 
-        <a class="navInfo">HOME</a>
-        <a class="navInfo">PRODUCTS</a>
-        <a class="navInfo">SALE</a>
+        <a class="navInfo" href="./index.html#home">HOME</a>
+        <a class="navInfo" href="./index.html#products">PRODUCTS</a>
+        <a class="navInfo" href="./src/shop.html">SALE</a>
         <a class="navInfo">CONTACT US</a>
         <div class="userInfo">
             <a class="navInfo"> <!-- HIDDEN WHEN NO USER LOGGED IN -->
@@ -40,7 +40,8 @@
             <a class="navInfo" href="./src/signIn.html"> LOG IN </a>
         </div>
     </nav>
-    <div class="wrapper">
+    <section id="home">
+      <div class="wrapper">
       <div class="col1">
         <div class="box1" id="textbox">
           <img src="src/assets/woman.jpg" alt="" class="img" />
@@ -60,19 +61,21 @@
             </div>
           </div>
           <div class="box31">
-            <img src="src/assets/coolman.jpg" alt="" class="img" />
+            <img src="src/assets/men/coolman.jpg" alt="" class="img" />
           </div>
         </div>
       </div>
       <div class="col3">
         <div class="box5">
-          <img src="src/assets/blackman.jpg" alt="" class="img" />
+          <img src="src/assets/men/blackman.jpg" alt="" class="img" />
         </div>
         <div class="box4" id="textbox">
           <p>Begin</p>
         </div>
       </div>
     </div>
+    </section>
+    
     <section class="content">
       <div class="title">An Initiative for the students by the students</div>
       <p>
@@ -100,13 +103,13 @@
         </a>
       </div>
     </section>
-    <section class="products">
+    <section id="products" class="products">
       <div class="title">Products</div>
       <div class="product-category-grid">
         
         <!-- Showcase product here -->
         <div class="product">
-          <img src="src/assets/mensaparel.webp" alt="" width="30%" height="30%" />
+          <img src="src/assets/men/mensaparel.webp" alt="" width="30%" height="30%" />
           <div class="product-hover">
             <a href="./src/shop.html">
               <div class="text">Men's apparel</div>
@@ -164,7 +167,6 @@
         </a>
 
       </div>
-    </footer>
     </footer>
   </body>
 </html>
