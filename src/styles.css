@@ -143,19 +143,19 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   color: white;
   height: 100%;
 }
 
 .title {
-  font-size: 4rem;
+  font-size: 5vw;
   text-align: center;
 }
 
 .content p {
-  padding: 2rem 8rem;
+  padding: 2rem;
   font-size: 1.7rem;
   text-align: center;
 }
@@ -399,4 +399,26 @@ footer p {
   .social-media {
     width: 70%;
   }
+}
+
+@keyframes appear{
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.content{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 30%;
+}
+.products{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0;
 }
