@@ -16,14 +16,15 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Maven+Pro:wght@400..900&family=Oswald:wght@200..700&display=swap"
     rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
 
 <body class="bg-gray-950">
 
   <body class="">
     <nav>
-      <a class="navInfoMobile">
-        <img src="assets/icons/menu.svg" />
+      <a id="menu" class="navInfoMobile">
+        <img src="./assets/icons/menu.svg" />
       </a>
 
       <a class="navInfoMobile">
@@ -35,10 +36,24 @@
       <a class="navInfo" href="./contactUs.html">CONTACT US</a>
       <div class="userInfo">
         <a class="navInfo"> <!-- HIDDEN WHEN NO USER LOGGED IN -->
-          <img src="assets/icons/person-fill.svg" />
+          <img src="./assets/icons/person-fill.svg" />
         </a>
         <a class="navInfo" href="./signIn.html"> LOG IN </a>
       </div>
+    </nav>
+    <nav id="navBarMobile" class="hidden z-10 h-screen w-10/12 rounded-r-lg">
+      <button id="closeMobileNav" class="mb-5 text-black p-2 bg-white text-base">X</button>
+      <div class="flex flex-col h-3/5 justify-around text-lg">
+        <a class="w-fit p-3" href="../index.html#home">HOME</a>
+        <a class="w-fit p-3" href="../index.html#products">PRODUCTS</a>
+        <a class="w-fit p-3" href="./contactUs.html">CONTACT US</a>
+
+        <a class="w-fit p-3"> <!-- HIDDEN WHEN NO USER LOGGED IN -->
+          YOUR PROFILE
+        </a>
+        <a class="w-fit p-3" href="./signIn.html"> LOG IN </a>
+      </div>
+
     </nav>
     <div class="bg-white w-11/12 h-20 rounded-2xl flex justify-center items-center m-auto mt-16 shadow-lg">
       <h1 class="font-semibold text-pretty text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">Sneakers</h1>
@@ -49,8 +64,7 @@
         <div class="bg-white border-2 border-black shadow-md overflow-hidden flex flex-col">
           <div class="h-56 sm:h-56 md:h-64 lg:h-96 overflow-hidden">
             <img class="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
-                 src="./assets/sneaker/1.webp" 
-                 alt="Thirsty Thursday T-shirt" />
+              src="./assets/sneaker/1.webp" alt="Thirsty Thursday T-shirt" />
           </div>
           <div class="p-4 flex flex-col justify-between flex-grow">
             <div>
@@ -61,19 +75,19 @@
             </div>
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-2 sm:space-y-0">
               <span class="text-xl font-semibold">₹500.00</span>
-              <button class="w-full sm:w-auto bg-white text-black font-semibold border border-black px-4 py-2 hover:bg-black hover:text-white transition-colors duration-300">
+              <button
+                class="w-full sm:w-auto bg-white text-black font-semibold border border-black px-4 py-2 hover:bg-black hover:text-white transition-colors duration-300">
                 Add to Cart
               </button>
             </div>
           </div>
         </div>
-      
+
         <!-- 2ND CARD -->
         <div class="bg-white border-2 border-black shadow-md overflow-hidden flex flex-col">
           <div class="h-56 sm:h-56 md:h-64 lg:h-96 overflow-hidden">
             <img class="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
-                 src="./assets/sneaker/1.jpg" 
-                 alt="Men's Derek Jeter Jersey" />
+              src="./assets/sneaker/1.jpg" alt="Men's Derek Jeter Jersey" />
           </div>
           <div class="p-4 flex flex-col justify-between flex-grow">
             <div>
@@ -84,19 +98,19 @@
             </div>
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-2 sm:space-y-0">
               <span class="text-xl font-semibold">₹1100</span>
-              <button class="w-full sm:w-auto bg-white text-black font-semibold border border-black px-4 py-2 hover:bg-black hover:text-white transition-colors duration-300">
+              <button
+                class="w-full sm:w-auto bg-white text-black font-semibold border border-black px-4 py-2 hover:bg-black hover:text-white transition-colors duration-300">
                 Add to Cart
               </button>
             </div>
           </div>
         </div>
-      
+
         <!-- 3RD CARD -->
         <div class="bg-white border-2 border-black shadow-md overflow-hidden flex flex-col">
           <div class="h-56 sm:h-56 md:h-64 lg:h-96 overflow-hidden">
             <img class="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
-                 src="./assets/sneaker/4.webp" 
-                 alt="Stakes Still High T-Shirt" />
+              src="./assets/sneaker/4.webp" alt="Stakes Still High T-Shirt" />
           </div>
           <div class="p-4 flex flex-col justify-between flex-grow">
             <div>
@@ -107,19 +121,19 @@
             </div>
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-2 sm:space-y-0">
               <span class="text-xl font-semibold">₹320</span>
-              <button class="w-full sm:w-auto bg-white text-black font-semibold border border-black px-4 py-2 hover:bg-black hover:text-white transition-colors duration-300">
+              <button
+                class="w-full sm:w-auto bg-white text-black font-semibold border border-black px-4 py-2 hover:bg-black hover:text-white transition-colors duration-300">
                 Add to Cart
               </button>
             </div>
           </div>
         </div>
-      
+
         <!-- 4TH CARD -->
         <div class="bg-white border-2 border-black shadow-md overflow-hidden flex flex-col">
           <div class="h-56 sm:h-56 md:h-64 lg:h-96 overflow-hidden">
             <img class="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
-                 src="./assets/sneaker/5.webp" 
-                 alt="Whiskey Helps T-shirt" />
+              src="./assets/sneaker/5.webp" alt="Whiskey Helps T-shirt" />
           </div>
           <div class="p-4 flex flex-col justify-between flex-grow">
             <div>
@@ -130,19 +144,19 @@
             </div>
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-2 sm:space-y-0">
               <span class="text-xl font-semibold">₹2800</span>
-              <button class="w-full sm:w-auto bg-white text-black font-semibold border border-black px-4 py-2 hover:bg-black hover:text-white transition-colors duration-300">
+              <button
+                class="w-full sm:w-auto bg-white text-black font-semibold border border-black px-4 py-2 hover:bg-black hover:text-white transition-colors duration-300">
                 Add to Cart
               </button>
             </div>
           </div>
         </div>
-      
+
         <!-- 5TH CARD -->
         <div class="bg-white border-2 border-black shadow-md overflow-hidden flex flex-col">
           <div class="h-56 sm:h-56 md:h-64 lg:h-96 overflow-hidden">
             <img class="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
-                 src="./assets/sneaker/6.webp" 
-                 alt="Quail Family Tee" />
+              src="./assets/sneaker/6.webp" alt="Quail Family Tee" />
           </div>
           <div class="p-4 flex flex-col justify-between flex-grow">
             <div>
@@ -153,19 +167,19 @@
             </div>
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-2 sm:space-y-0">
               <span class="text-xl font-semibold">₹300</span>
-              <button class="w-full sm:w-auto bg-white text-black font-semibold border border-black px-4 py-2 hover:bg-black hover:text-white transition-colors duration-300">
+              <button
+                class="w-full sm:w-auto bg-white text-black font-semibold border border-black px-4 py-2 hover:bg-black hover:text-white transition-colors duration-300">
                 Add to Cart
               </button>
             </div>
           </div>
         </div>
-      
+
         <!-- 6TH CARD -->
         <div class="bg-white border-2 border-black shadow-md overflow-hidden flex flex-col">
           <div class="h-56 sm:h-56 md:h-64 lg:h-96 overflow-hidden">
             <img class="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
-                 src="./assets/sneaker/7.jpg" 
-                 alt="Freenote Clothe Jacket" />
+              src="./assets/sneaker/7.jpg" alt="Freenote Clothe Jacket" />
           </div>
           <div class="p-4 flex flex-col justify-between flex-grow">
             <div>
@@ -176,19 +190,19 @@
             </div>
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-2 sm:space-y-0">
               <span class="text-xl font-semibold">₹350</span>
-              <button class="w-full sm:w-auto bg-white text-black font-semibold border border-black px-4 py-2 hover:bg-black hover:text-white transition-colors duration-300">
+              <button
+                class="w-full sm:w-auto bg-white text-black font-semibold border border-black px-4 py-2 hover:bg-black hover:text-white transition-colors duration-300">
                 Add to Cart
               </button>
             </div>
           </div>
         </div>
-      
+
         <!-- 7TH CARD -->
         <div class="bg-white border-2 border-black shadow-md overflow-hidden flex flex-col">
           <div class="h-56 sm:h-56 md:h-64 lg:h-96 overflow-hidden">
             <img class="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
-                 src="./assets/sneaker/7.webp" 
-                 alt="PORTUGUESE FLANNEL Shirt" />
+              src="./assets/sneaker/7.webp" alt="PORTUGUESE FLANNEL Shirt" />
           </div>
           <div class="p-4 flex flex-col justify-between flex-grow">
             <div>
@@ -199,19 +213,19 @@
             </div>
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-2 sm:space-y-0">
               <span class="text-xl font-semibold">₹6990</span>
-              <button class="w-full sm:w-auto bg-white text-black font-semibold border border-black px-4 py-2 hover:bg-black hover:text-white transition-colors duration-300">
+              <button
+                class="w-full sm:w-auto bg-white text-black font-semibold border border-black px-4 py-2 hover:bg-black hover:text-white transition-colors duration-300">
                 Add to Cart
               </button>
             </div>
           </div>
         </div>
-      
+
         <!-- 8TH CARD -->
         <div class="bg-white border-2 border-black shadow-md overflow-hidden flex flex-col">
           <div class="h-56 sm:h-56 md:h-64 lg:h-96 overflow-hidden">
             <img class="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
-                 src="./assets/sneaker/8.webp" 
-                 alt="ORSLOW Denim Overshirt" />
+              src="./assets/sneaker/8.webp" alt="ORSLOW Denim Overshirt" />
           </div>
           <div class="p-4 flex flex-col justify-between flex-grow">
             <div>
@@ -222,7 +236,8 @@
             </div>
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-2 sm:space-y-0">
               <span class="text-xl font-semibold">₹900</span>
-              <button class="w-full sm:w-auto bg-white text-black font-semibold border border-black px-4 py-2 hover:bg-black hover:text-white transition-colors duration-300">
+              <button
+                class="w-full sm:w-auto bg-white text-black font-semibold border border-black px-4 py-2 hover:bg-black hover:text-white transition-colors duration-300">
                 Add to Cart
               </button>
             </div>
@@ -267,8 +282,7 @@
 
       </div>
     </footer>
-    <script>
-      console.log(window.innerWidth);
-    </script>
+    <script src="../index.js"></script>
   </body>
+
 </html>
