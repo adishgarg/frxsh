@@ -16,29 +16,44 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Maven+Pro:wght@400..900&family=Oswald:wght@200..700&display=swap"
     rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
 
 <body class="bg-gray-950">
 
   <body class="">
     <nav>
-      <a class="navInfoMobile">
-        <img src="assets/icons/menu.svg" />
+      <a id="menu" class="navInfoMobile">
+        <img src="./assets/icons/menu.svg" />
       </a>
-
+  
       <a class="navInfoMobile">
         frxsh
       </a>
-
+  
       <a class="navInfo" href="../index.html#home">HOME</a>
       <a class="navInfo" href="../index.html#products">PRODUCTS</a>
       <a class="navInfo" href="./contactUs.html">CONTACT US</a>
       <div class="userInfo">
         <a class="navInfo"> <!-- HIDDEN WHEN NO USER LOGGED IN -->
-          <img src="assets/icons/person-fill.svg" />
+          <img src="./assets/icons/person-fill.svg" />
         </a>
         <a class="navInfo" href="./signIn.html"> LOG IN </a>
       </div>
+    </nav>
+    <nav id="navBarMobile" class="hidden z-10 h-screen w-10/12 rounded-r-lg">
+      <button id="closeMobileNav" class="mb-5 text-black p-2 bg-white text-base">X</button>
+      <div class="flex flex-col h-3/5 justify-around text-lg">
+        <a class="w-fit p-3" href="../index.html#home">HOME</a>
+        <a class="w-fit p-3" href="../index.html#products">PRODUCTS</a>
+        <a class="w-fit p-3" href="./contactUs.html">CONTACT US</a>
+        
+        <a class="w-fit p-3"> <!-- HIDDEN WHEN NO USER LOGGED IN -->
+          YOUR PROFILE
+        </a>
+        <a class="w-fit p-3" href="./signIn.html"> LOG IN </a>
+      </div>
+  
     </nav>
     <div class="bg-white w-11/12 h-20 rounded-2xl flex justify-center items-center m-auto mt-16 shadow-lg">
       <h1 class="font-semibold text-pretty text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"> Men's Apparel</h1>
@@ -267,8 +282,6 @@
 
       </div>
     </footer>
-    <script>
-      console.log(window.innerWidth);
-    </script>
+    <script src="../index.js"></script>
   </body>
 </html>
