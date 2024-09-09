@@ -3,10 +3,10 @@ const closeButton = document.getElementById("closeMobileNav");
 const mobileBar = document.getElementById("navBarMobile");
 
 let showMobileBar = gsap.from(mobileBar, {
-    duration: 1,
+    duration: 0.5,
     x: '-20%', 
     opacity: 0, 
-    ease: "powe4.out",
+    ease: "expo.inOut",
     paused: true,
     onStart: () => { mobileBar.style.display = "block"; },
     onReverseComplete: () => { mobileBar.style.display = "none"; }
