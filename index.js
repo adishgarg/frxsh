@@ -1,7 +1,11 @@
 const menuButton = document.getElementById("menu");
 const closeButton = document.getElementById("closeMobileNav");
 const mobileBar = document.getElementById("navBarMobile");
+const home = document.getElementById("home");
+const heroWomen = document.getElementById("textbox");
+const heroTextBox2 = document.getElementById("textbox2");
 
+// Show Navigation bar
 let showMobileBar = gsap.from(mobileBar, {
     duration: 0.5,
     x: '-20%', 
@@ -20,9 +24,19 @@ closeButton.addEventListener("click", () => {
     showMobileBar.reverse();
 });
 
-// alert(window.innerWidth);
 
-if (window.innerWidth <= 768) {
-    console.log(window.innerWidth);
-}
+// Fade in for HeroPage items
+// gsap.from(heroWomen, {
+//     x: "-10%",
+//     opacity: 0,
+//     duration: 0.5,
+//     ease: "expo.in"
+// })
+
+// gsap.from(heroTextBox2, {
+//     y: "10%",
+//     opacity: 0,
+//     duration: 0.5,
+//     ease: "expo.in"
+// })
 
