@@ -29,14 +29,14 @@ closeButton.addEventListener("click", () => {
 gsap.from(heroWomen, {
     x: "-10%",
     opacity: 0,
-    duration: 0.5,
+    duration: 1,
     ease: "expo.in"
 })
 
 gsap.from(heroTextBox2, {
     x: "18%",
     opacity: 0,
-    duration: 0.5,
+    duration: 1,
     ease: "expo.in"
 })
 
