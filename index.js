@@ -26,17 +26,17 @@ closeButton.addEventListener("click", () => {
 
 
 // Fade in for HeroPage items
-// gsap.from(heroWomen, {
-//     x: "-10%",
-//     opacity: 0,
-//     duration: 0.5,
-//     ease: "expo.in"
-// })
+gsap.from(heroWomen, {
+    x: "-10%",
+    opacity: 0,
+    duration: 0.5,
+    ease: "expo.in"
+})
 
-// gsap.from(heroTextBox2, {
-//     y: "10%",
-//     opacity: 0,
-//     duration: 0.5,
-//     ease: "expo.in"
-// })
+gsap.from(heroTextBox2, {
+    x: "18%",
+    opacity: 0,
+    duration: 0.5,
+    ease: "expo.in"
+})
 
