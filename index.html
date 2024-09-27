@@ -15,7 +15,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Maven+Pro:wght@400..900&family=Oswald:wght@200..700&display=swap"
     rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
 
 <body>
@@ -55,15 +54,15 @@
   <section id="home">
     <div class="wrapper">
       <div class="col1">
-        <div class="box1" id="textbox">
-          <img src="src/assets/woman.jpg" alt="" class="img" />
+        <div class="box1">
+          <img id="womenImage" src="src/assets/woman.jpg" alt="" class="img" />
         </div>
       </div>
       <div class="col2">
-        <div class="box2">
+        <div class="box2" id="logo">
           <p>frxsh</p>
         </div>
-        <div class="c2r1">
+        <div class="c2r1 appearLater">
           <div class="c2r1c1">
             <div class="box3">
               <img src="src/assets/sneakers.jpg" alt="" class="img" />
@@ -79,7 +78,7 @@
       </div>
       <div class="col3">
         <div class="box5">
-          <img src="src/assets/men/blackman.jpg" alt="" class="img" />
+          <img src="src/assets/men/blackman.jpg" alt="" class="img appearLater" />
         </div>
         <div class="box4" id="textbox2">
           <p>Begin</p>
@@ -194,6 +193,7 @@
 
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="./index.js"></script>
 </body>
 </html>
