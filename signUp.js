@@ -3,7 +3,9 @@ alert("Your passwords are currently visible to us, this site is in testing mode.
 const signUp = document.getElementById('signUp');
 const image = document.getElementById('coolGuy')
 
-signUp.addEventListener("click", () => {
+signUp.addEventListener("click", (event) => {
+    event.preventDefault();
+    
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
