@@ -18,6 +18,18 @@ function addUser(name, email, password) {
     }
 }
 
+function logUser(email, password) {
+    if (!users[email]) {
+        return false; // No user
+    } else {
+        if (user[email].password == password) {
+            return true; // login success
+        } else {
+            return false // login fail
+        }
+    }
+}
+
 // Function to check if a user already exists
 function userExists(email) {
     return users.hasOwnProperty(email);

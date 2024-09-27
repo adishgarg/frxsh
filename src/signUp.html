@@ -26,11 +26,14 @@
         class="border-2 border-white p-8 rounded-md w-full max-w-4xl mx-8 gap-8 lg:grid lg:grid-cols-2"
       >
         <div class="hidden justify-center items-center lg:flex">
-          <img
-            src="./assets/men/blackman.jpg"
-            alt="Image"
-            class="max-w-full h-auto rounded-md"
-          />
+          <div class="overflow-hidden bg-[#d9d9d96b]">
+            <img
+              id="coolGuy"
+              src="./assets/men/blackman.jpg"
+              alt="Image"
+              class="max-w-full h-auto rounded-md"
+            />
+          </div>
         </div>
         <div class="flex flex-col justify-around">
           <h2 class="text-2xl font-bold mb-6 text-center text-white">
@@ -118,6 +121,7 @@
         </div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="../signUp.js"></script>
     <script src="../users.js"></script>
   </body>

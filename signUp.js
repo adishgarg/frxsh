@@ -1,6 +1,7 @@
-alert("Your passwords are currently visible to us, this site is in testing mode.")
+// alert("Your passwords are currently visible to us, this site is in testing mode.")
 
 const signUp = document.getElementById('signUp');
+const image = document.getElementById('coolGuy')
 
 signUp.addEventListener("click", () => {
     const name = document.getElementById('name').value;
@@ -23,3 +24,11 @@ signUp.addEventListener("click", () => {
         alert("Error: Passwords do not match.");
     }
 });
+
+gsap.from(image, {
+    x: "-200%",
+    opacity: 0,
+    duration: 1,
+    delay:0,
+    ease: "power2.out"
+})
