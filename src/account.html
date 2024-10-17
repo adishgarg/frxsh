@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 300px;
+            text-align: center;
+        }
+        .container h1 {
+            margin-bottom: 20px;
+        }
+        .info {
+            margin: 10px 0;
+        }
+        .info label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .info span {
+            display: block;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons button {
+            background-color: #6200ea;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .buttons button:hover {
+            background-color: #3700b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>User Information</h1>
+        <div class="info">
+            <label for="name">Name:</label>
+            <span id="name">Harshit Batra</span>
+        </div>
+        <div class="info">
+            <label for="email">Email:</label>
+            <span id="email">harshit@gmail.com</span>
+        </div>
+        <div class="info">
+            <label for="number">Phone Number:</label>
+            <span id="number"></span>
+        </div>
+        <div class="buttons">
+            <button onclick="editInfo()">Edit</button>
+            <button onclick="deleteaccount()">Delete Account</button>
+        </div>
+    </div>
+
+    <script>
+        function editInfo() {
+            confirm("Do you want to edit your information?");
+            const name = prompt("Enter your name:", document.getElementById('name').textContent);
+            const email = prompt("Enter your email:", document.getElementById('email').textContent);
+            const phoneNumber = prompt("Enter your phone number:", document.getElementById('number').textContent);
+
+            if (name !== null) {
+                document.getElementById('name').textContent = name;
+            }
+            if (email !== null) {
+                document.getElementById('email').textContent = email;
+            }
+            if (phoneNumber !== null) {
+                document.getElementById('number').textContent = phoneNumber;
+            }
+        }
+
+        function deleteaccount() {
+            confirm("Are you sure you want to delete your account?");
+        }
+    </script>
+</body>
+</html>
