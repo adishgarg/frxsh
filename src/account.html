@@ -98,6 +98,12 @@
 
         function deleteaccount() {
             confirm("Are you sure you want to delete your account?");
+            if (confirm("Are you sure you want to delete your account? This action cannot be undone.")) {
+                alert("Your account has been deleted.");
+                document.getElementById('name').textContent = '';
+                document.getElementById('email').textContent = '';
+                document.getElementById('number').textContent = '';
+            }
         }
     </script>
 </body>
