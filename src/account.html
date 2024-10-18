@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account</title>
     <style>
+         @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
         body {
             background-color: #121212;
             color: #ffffff;
@@ -14,6 +24,9 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+        }
+        .container {
+            animation: fadeIn 1s ease-in-out;
         }
         .container {
             background-color: #1e1e1e;
@@ -80,7 +93,7 @@
 
     <script>
         function editInfo() {
-            confirm("Do you want to edit your information?");
+            if (confirm("Do you want to edit your information?")) {
             const name = prompt("Enter your name:", document.getElementById('name').textContent);
             const email = prompt("Enter your email:", document.getElementById('email').textContent);
             const phoneNumber = prompt("Enter your phone number:", document.getElementById('number').textContent);
@@ -94,10 +107,10 @@
             if (phoneNumber !== null) {
                 document.getElementById('number').textContent = phoneNumber;
             }
+            }
         }
 
         function deleteaccount() {
-            confirm("Are you sure you want to delete your account?");
             if (confirm("Are you sure you want to delete your account? This action cannot be undone.")) {
                 alert("Your account has been deleted.");
                 document.getElementById('name').textContent = '';
