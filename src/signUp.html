@@ -21,12 +21,51 @@
     />
   </head>
   <body>
+    <nav>
+      <a id="menu" class="navInfoMobile">
+        <img src="./assets/icons/menu.svg" />
+      </a>
+
+      <a class="navInfoMobile"> frxsh </a>
+
+      <a class="navInfo" href="../index.html#home">HOME</a>
+      <a class="navInfo" href="../index.html#products">PRODUCTS</a>
+      <a class="navInfo" href="./contactUs.html">CONTACT US</a>
+      <div class="userInfo">
+        <a class="navInfo">
+          <!-- HIDDEN WHEN NO USER LOGGED IN -->
+          <img src="./assets/icons/person-fill.svg" />
+        </a>
+        <a class="navInfo" href="./signIn.html"> LOG IN </a>
+      </div>
+    </nav>
+    <nav id="navBarMobile" class="hidden z-10 h-screen w-10/12 rounded-r-lg">
+      <button
+        id="closeMobileNav"
+        class="mb-5 text-black p-2 bg-white text-base"
+      >
+        X
+      </button>
+      <div class="flex flex-col h-3/5 justify-around text-lg">
+        <a class="w-fit p-3" href="../index.html#home">HOME</a>
+        <a class="w-fit p-3" href="../index.html#products">PRODUCTS</a>
+        <a class="w-fit p-3" href="./contactUs.html">CONTACT US</a>
+
+        <a class="w-fit p-3">
+          <!-- HIDDEN WHEN NO USER LOGGED IN -->
+          YOUR PROFILE
+        </a>
+        <a class="w-fit p-3" href="./signIn.html"> LOG IN </a>
+      </div>
+    </nav>
     <div class="flex justify-center items-center h-screen w-full bg-black">
       <div
         class="border-2 border-white p-8 rounded-md w-full max-w-4xl mx-8 gap-8 lg:grid lg:grid-cols-2"
       >
-        <div class="hidden justify-center items-center lg:flex">
-          <div class="overflow-hidden bg-[#d9d9d96b]">
+        <div
+          class="hidden justify-center items-center lg:flex bg-[rgb(220,220,220)]"
+        >
+          <div class="overflow-hidden bg-[rgb(220,220,220)]">
             <img
               id="coolGuy"
               src="./assets/men/blackman.jpg"
@@ -104,7 +143,6 @@
                 <!-- Set to `type submit` later -->
                 <button
                   id="signUp"
-
                   class="w-full text-white py-3 border-2 border-opacity-75 border-white font-semibold hover:bg-white hover:text-black focus:ring-2 focus:ring-white transition-all duration-200"
                 >
                   Sign Up

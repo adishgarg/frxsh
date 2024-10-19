@@ -15,6 +15,8 @@ signIn.addEventListener("click", (event) => {
         } else {
             alert("password was wrong");
         }
+    } else {
+        alert("User doesnt exsists");
     }
 
 })

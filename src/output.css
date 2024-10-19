@@ -807,6 +807,11 @@ video {
   --tw-border-opacity: 0.75;
 }
 
+.bg-\[rgb\(219\2c 219\2c 219\)\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 219 219 / var(--tw-bg-opacity));
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -820,15 +825,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#d9d9d9\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(217 217 217 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#d9d9d96b\] {
-  background-color: #d9d9d96b;
 }
 
 .object-contain {
