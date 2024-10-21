@@ -1,7 +1,7 @@
-alert("Your passwords are currently visible to us, this site is in testing mode.")
+// alert("Your passwords are currently visible to us, this site is in testing mode.")
 
 const signUp = document.getElementById('signUp');
-const image = document.getElementById('coolGuy')
+const image = document.getElementById('coolGuy') // For GSAP animations
 
 signUp.addEventListener("click", (event) => {
     event.preventDefault();

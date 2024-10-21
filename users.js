@@ -22,7 +22,7 @@ function logUser(email, password) {
     if (users[email].password == password) {
         return true; // login success
     } else {
-        return false // login fail
+        return false;
     }
 }
 
@@ -31,6 +31,7 @@ function userExists(email) {
     return users.hasOwnProperty(email);
 }
 
+// window makes functions globally accessable
 window.addUser = addUser;
 window.userExists = userExists;
 window.logUser = logUser;
