@@ -11,6 +11,19 @@ const heroTextBox2 = document.getElementById("textbox2");
 const logo = document.getElementById("logo");
 const appearLater = document.getElementsByClassName("appearLater");
 
+const cartItemImages = document.getElementsByClassName("cImage");
+const cartItemData = document.getElementsByClassName("cData");
+const cartRemoveData = document.getElementsByClassName("cRemove");
+
+for (var i = 0; i < cartRemoveData.length; i++) {
+  (function(i) {
+    cartRemoveData[i].addEventListener("click", () => {
+      cartItemData[i].style.display = "none";
+      cartItemImages[i].style.display = "none";
+    });
+  })(i);
+}
+
 // Show Navigation bar
 if (mobileBar) {
     let showMobileBar = gsap.from(mobileBar, {
@@ -100,4 +113,3 @@ if (appearLater.length > 0) {
         ease: "none"
     });
 }
-
